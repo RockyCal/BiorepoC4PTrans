@@ -21,6 +21,8 @@ class Entry(self, name):
 	#desc
 	#contact
 
-for row in ws.range('%s%s:%s%s'%(GR_INSTIT_NAME_COL, START_ROW, GR_INSTIT_NAME_COL, END_ROW)):
+for row in ws.range('%s%s:%s%s'%(GR_REPO_NAME_COL, START_ROW, GR_REPO_NAME_COL, END_ROW)):
 	for cell in row:
-		if
+		coordinate = coordinate_from_string(cell.get_coordinate())
+		if cell.value == None or cell.value == "Herbarium" or cell.value == "Herbario":
+			cell.value = ws('%s%s'%(GR_INSTIT_NAME_COL, coordinate[1])).value
