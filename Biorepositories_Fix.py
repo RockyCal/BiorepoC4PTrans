@@ -31,4 +31,4 @@ for row in ws.range('%s%s:%s%s'%(GR_REPO_NAME_COL, START_ROW, GR_REPO_NAME_COL, 
 		if cell.value == None or cell.value == "Herbarium" or cell.value == "Herbario":
 			cell.value = ws['%s%s'%(GR_INSTIT_NAME_COL, coordinate[1])].value
 
-wb.save("biorepositories_from_website")
+wb.save("biorepositories_from_website.xlsx")
