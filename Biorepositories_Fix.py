@@ -17,8 +17,8 @@ GR_INSTIT_NAME_COL = 'B'
 GR_REPO_NAME_COL = 'C'
 GR_STATUS_COL = 'H'
 
-class Entry(self, name):
-	self.name = name
+#class Entry(self, name):
+#	self.name = name
 	#institutionName
 	#repoName
 	#URL
